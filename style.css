@@ -28,6 +28,7 @@ table {
     width: 800px;
     border-collapse: collapse;
     margin: 0 auto;
+    margin-bottom: 20px;
 }
 
 td, th {
@@ -62,7 +63,7 @@ input {
 
 .gerar {
     width: 100px;
-    margin: 30px;
+    margin: 20px;
     text-align: center;
     background-color: green;
     padding: 5px;

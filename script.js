@@ -137,41 +137,36 @@ var UsoDisk5 = document.getElementById('UsoDisk5')
 
 
         let item = document.createElement('option')
+        item.setAttribute("id", "RVelocyfinal");
         item.text = `${calculoCPUTot.toFixed(2)}`
         RVelocy.appendChild(item)
 
         let item2 = document.createElement('option')
+        item2.setAttribute("id", "RMemoryfinal");
         item2.text = `${calculoMemoryTot.toFixed(2)}`
         RMemory.appendChild(item2)
 
         let item3 = document.createElement('option')
+        item3.setAttribute("id", "RDiskfinal");
         item3.text = `${calculoDiskTot.toFixed(2)}`
         RDisk.appendChild(item3)
+
+        Verificador()
 
 }
 
 
 function habilitado1() {
-   var CPU = document.getElementById('CPU')
-   var Velocity = document.getElementById('Velc')
-   var UsoCPU = document.getElementById('UsoCPU')
-   var Memory = document.getElementById('Memory')
-   var UsoMemory = document.getElementById('UsoMemory')
-   var Disk = document.getElementById('Disk')
-   var UsoDisk = document.getElementById('UsoDisk')
-
-   var CPU1 = Number(CPU.value)
-   var Velocity1 = Number(Velocity.value)
-   var UsoCPU1 = Number(UsoCPU.value)
-   var Memory1 = Number(Memory.value)
-   var UsoMemory1 = Number(UsoMemory.value)
-   var Disk1 = Number(Disk.value)
-   var UsoDisk1 = Number(UsoDisk.value)
-
-
+   var CPU = document.getElementById('CPU').value=''
+   var Velocity = document.getElementById('Velc').value=''
+   var UsoCPU = document.getElementById('UsoCPU').value=''
+   var Memory = document.getElementById('Memory').value=''
+   var UsoMemory = document.getElementById('UsoMemory').value=''
+   var Disk = document.getElementById('Disk').value=''
+   var UsoDisk = document.getElementById('UsoDisk').value=''
 
    CalcularPc()
-
+   Verificador()
 }
 
 function habilitado2() {
@@ -185,7 +180,7 @@ function habilitado2() {
 
 
    CalcularPc()
-
+   Verificador()
 }
 
 function habilitado3() {
@@ -199,7 +194,7 @@ var UsoDisk3 = document.getElementById('UsoDisk3').value=''
 
  
    CalcularPc()
-
+   Verificador()
 }
 
 function habilitado4() {
@@ -212,7 +207,7 @@ function habilitado4() {
    var UsoDisk4 = document.getElementById('UsoDisk4').value=''
  
    CalcularPc()
-
+   Verificador()
 }
 
 function habilitado5() {
@@ -227,6 +222,53 @@ function habilitado5() {
 
  
    CalcularPc()
+   Verificador()
+}
+
+
+function Verificador() {
+
+
+   var Velocitytot = document.getElementById('RVelocyfinal').innerHTML
+   var Memorytot = document.getElementById('RMemoryfinal').innerHTML
+   var Disktot = document.getElementById('RDiskfinal').innerHTML
+
+   var Velocitytot1 = Number(Velocitytot)
+   var Memorytot1 = Number(Memorytot)
+   var Disktot1 = Number(Disktot)
+
+
+
+
+   var CPU2 = document.getElementById('cpuft').innerHTML
+   var Velocity2 = document.getElementById('velof').innerHTML
+   var Memory2 = document.getElementById('memof').innerHTML
+   var Disk2 = document.getElementById('discf').innerHTML
+
+   var CPUf = Number(CPU2)
+   var Velocityf = Number(Velocity2)
+   var Memorytotf = Number(Memory2)
+   var Disktotf = Number(Disk2)
+
+   var calculocpu = CPUf * Velocityf;
+   
+   console.log(Disktot1)
+   console.log(Disktotf)
+
+   console.log(Memorytot1)
+   console.log(Memorytotf)
+
+   console.log(Velocitytot1)
+   console.log(calculocpu)
+
+   if(Disktotf>Disktot1 && Memorytotf>Memorytot1){
+      console.log("Compativel")
+   } else {
+      console.log("Incompativel")
+   }
+
+
 
 }
+
 

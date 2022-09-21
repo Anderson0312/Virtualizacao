@@ -166,7 +166,7 @@ function habilitado1() {
    var UsoDisk = document.getElementById('UsoDisk').value=''
 
    CalcularPc()
-   Verificador()
+
 }
 
 function habilitado2() {
@@ -180,7 +180,7 @@ function habilitado2() {
 
 
    CalcularPc()
-   Verificador()
+
 }
 
 function habilitado3() {
@@ -194,7 +194,7 @@ var UsoDisk3 = document.getElementById('UsoDisk3').value=''
 
  
    CalcularPc()
-   Verificador()
+
 }
 
 function habilitado4() {
@@ -207,7 +207,7 @@ function habilitado4() {
    var UsoDisk4 = document.getElementById('UsoDisk4').value=''
  
    CalcularPc()
-   Verificador()
+
 }
 
 function habilitado5() {
@@ -222,7 +222,7 @@ function habilitado5() {
 
  
    CalcularPc()
-   Verificador()
+
 }
 
 
@@ -250,7 +250,7 @@ function Verificador() {
    var Memorytotf = Number(Memory2)
    var Disktotf = Number(Disk2)
 
-   var calculocpu = CPUf * Velocityf;
+   let calculocpu = Number(CPUf * Velocityf);
    
    console.log(Disktot1)
    console.log(Disktotf)
@@ -261,10 +261,19 @@ function Verificador() {
    console.log(Velocitytot1)
    console.log(calculocpu)
 
-   if(Disktotf>Disktot1 && Memorytotf>Memorytot1){
-      console.log("Compativel")
+   result.innerHTML = ''
+
+
+   if(Disktotf>Disktot1 && Memorytotf>Memorytot1 && calculocpu>Velocitytot){
+      let item = document.createElement('option')
+      item.setAttribute("id", "RespVerificar");
+      item.text = "Compatível"
+      result.appendChild(item)
    } else {
-      console.log("Incompativel")
+      let item = document.createElement('option')
+      item.setAttribute("id", "RespVerificar");
+      item.text = "Incompativel"
+      result.appendChild(item)
    }
 
 

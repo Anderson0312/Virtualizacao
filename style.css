@@ -1,0 +1,74 @@
+body {
+    background-color: cornflowerblue;
+    font: normal 18px arial;
+}
+
+header {
+    text-align: center;
+    color:black;
+}
+
+section {
+    width: 500px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 0 auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.521);
+    font: normal 14px arial ;
+}
+
+footer {
+    text-align: center;
+    font: 13px arial, helvetica
+}
+
+
+table {
+    width: 800px;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+caption {
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    background: lightblue;
+}
+
+thead {
+    background-color: gray;
+    color: white;
+}
+
+.num {
+    text-align: right;
+}
+
+tfoot {
+    background-color: gray;
+    color: white;
+}
+
+input {
+    width: 80px;
+}
+
+.gerar {
+    width: 100px;
+    margin: 30px;
+    text-align: center;
+    background-color: green;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.gerar:hover {
+    background-color:aqua;
+}

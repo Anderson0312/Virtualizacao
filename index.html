@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Calculador de Maquinarios</h1>
+    </header>
+
+    <TABLE>
+
+        <thead>
+            <tr>
+                <th scope="col">Tipo Servidor</th>
+                <th scope="col">CPU</th>
+                <th scope="col">Velocidade</th>
+                <th scope="col">USO</th>
+                <th scope="col">Memoria</th>
+                <th scope="col">Uso</th>
+                <th scope="col">Disco</th>
+                <th scope="col">Uso</th>
+                <th scope="col">habilitados</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>File Server</td>
+                <td class= 'num'><input type="number" name="valor" id="CPU"></td>
+                <td class= 'num'><input type="number" name="valor" id="Velc"></td>
+                <td class= 'num'><input type="number" name="valor" id="UsoCPU"></td>
+                <td class= 'num'><input type="number" name="valor" id="Memory"></td>
+                <td class= 'num'><input type="number" name="valor" id="UsoMemory"></td>
+                <td class= 'num'><input type="number" name="valor" id="Disk"></td>
+                <td class= 'num'><input type="number" name="valor" id="UsoDisk"></td>
+                
+                <td class= 'num'><input type="button" value="Desabilitar" id="Desabilitar" onclick='habilitado1()'></td>
+            </tr>
+            <tr>
+                <td>FireWall</td>
+                <td class= 'num'><input type="number" name="valor" id="CPU2"></td>
+                <td class= 'num'><input type="number" name="valor" id="Velc2"></td>
+                <td class= 'num'><input type="number" name="valor" id="UsoCPU2"></td>
+                <td class= 'num'><input type="number" name="valor" id="Memory2"></td>
+                <td class= 'num'><input type="number" name="valor" id="UsoMemory2"></td>
+                <td class= 'num'><input type="number" name="valor" id="Disk2"></td>
+                <td class= 'num'><input type="number" name="valor" id="UsoDisk2"></td>
+                
+                <td class= 'num'><input type="button" value="Desabilitar" id="Desabilitar" onclick='habilitado2()'></td>
+            </tr>
+            <tr>
+                <td>Proxy</td>
+                <td class= 'num'><input type="number" name="valor" id="CPU3"></td>
+                <td class= 'num'><input type="number" name="valor" id="Velc3"></td>
+                <td class= 'num'><input type="number" name="valor" id="UsoCPU3"></td>
+                <td class= 'num'><input type="number" name="valor" id="Memory3"></td>
+                <td class= 'num'><input type="number" name="valor" id="UsoMemory3"></td>
+                <td class= 'num'><input type="number" name="valor" id="Disk3"></td>
+                <td class= 'num'><input type="number" name="valor" id="UsoDisk3"></td>
+                
+                <td class= 'num'><input type="button" value="Desabilitar" id="Desabilitar" onclick='habilitado3()'></td>
+            </tr>
+            <tr>
+                <td>Aplicação 1</td>
+                <td class= 'num'><input type="number" name="valor" id="CPU4"></td>
+                <td class= 'num'><input type="number" name="valor" id="Velc4"></td>
+                <td class= 'num'><input type="number" name="valor" id="UsoCPU4"></td>
+                <td class= 'num'><input type="number" name="valor" id="Memory4"></td>
+                <td class= 'num'><input type="number" name="valor" id="UsoMemory4"></td>
+                <td class= 'num'><input type="number" name="valor" id="Disk4"></td>
+                <td class= 'num'><input type="number" name="valor" id="UsoDisk4"></td>
+                
+                <td class= 'num'><input type="button" value="Desabilitar" id="Desabilitar" onclick='habilitado4()'></td>
+            </tr>
+            <tr>
+                <td>Aplicação 2</td>
+                <td class= 'num'><input type="number" name="valor" id="CPU5"></td>
+                <td class= 'num'><input type="number" name="valor" id="Velc5"></td>
+                <td class= 'num'><input type="number" name="valor" id="UsoCPU5"></td>
+                <td class= 'num'><input type="number" name="valor" id="Memory5"></td>
+                <td class= 'num'><input type="number" name="valor" id="UsoMemory5"></td>
+                <td class= 'num'><input type="number" name="valor" id="Disk5"></td>
+                <td class= 'num'><input type="number" name="valor" id="UsoDisk5"></td>
+                <td class= 'num'><input type="button" value="Desabilitar" id="Desabilitar" onclick='habilitado5()'></td>
+            </tr>
+
+        </tbody>   
+
+        <tfoot>
+            <tr>
+                <td scope=" row">PC Ideal</td>
+                <td class= 'num' ><strong></strong></td>
+                <td class= 'num' id="RVelocy" ><strong></strong></td>
+                <td class= 'num' ><strong></strong></td>
+                <td class= 'num' id="RMemory"><strong></strong></td>
+                <td class= 'num' ><strong></strong></td>
+                <td class= 'num' id="RDisk"><strong></strong></td>
+                <td class= 'num' ><strong></strong></td>
+                <td class= 'num' ><strong></strong></td>
+            </tr>
+            
+        </tfoot>
+        
+        
+    </TABLE>
+    
+    
+
+    <footer>
+        <input type="button" value="Gerar Calculo" onclick="CalcularPc()" class="gerar">
+        <p>&copy;AndersonM</p>
+        
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

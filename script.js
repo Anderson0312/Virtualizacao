@@ -251,27 +251,19 @@ function Verificador() {
    var Disktotf = Number(Disk2)
 
    let calculocpu = Number(CPUf * Velocityf);
-   
-   console.log(Disktot1)
-   console.log(Disktotf)
 
-   console.log(Memorytot1)
-   console.log(Memorytotf)
-
-   console.log(Velocitytot1)
-   console.log(calculocpu)
 
    result.innerHTML = ''
 
 
    if(Disktotf>Disktot1 && Memorytotf>Memorytot1 && calculocpu>Velocitytot){
       let item = document.createElement('option')
-      item.setAttribute("id", "RespVerificar");
+      item.setAttribute("id", "RespVerificarCon");
       item.text = "Compatível"
       result.appendChild(item)
    } else {
       let item = document.createElement('option')
-      item.setAttribute("id", "RespVerificar");
+      item.setAttribute("id", "RespVerificarIn");
       item.text = "Incompativel"
       result.appendChild(item)
    }

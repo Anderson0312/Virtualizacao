@@ -28,7 +28,7 @@ table {
     width: 800px;
     border-collapse: collapse;
     margin: 0 auto;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 td, th {
@@ -72,4 +72,15 @@ input {
 
 .gerar:hover {
     background-color:aqua;
+    
+}
+
+#RespVerificarCon {
+    background-color: green;
+    text-align: center
+}
+
+#RespVerificarIn {
+    background-color: red;
+    text-align: center
 }
